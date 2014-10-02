@@ -21,6 +21,12 @@ Better yet, run it in http-kit like this:
 
     lein run
 
+## Tests
+
+Run the tests:
+
+    lein test
+
 ## License
 
 Copyright © 2014 Orchard Labs
