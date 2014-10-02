@@ -15,6 +15,10 @@ To start a web server for the application, run:
 
     lein ring server
 
+Better yet, run it in http-kit like this:
+
+    lein run
+
 ## License
 
 Copyright © 2014 Orchard Labs
