@@ -1,0 +1,10 @@
+!!! 5
+html
+  head
+    title= pageName
+  body
+    header
+      h1 Clojart.io
+    ol.latest-submissions
+      for subm in submissions
+        li #{subm.author} #{subm.title}
