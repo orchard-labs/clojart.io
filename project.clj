@@ -8,6 +8,7 @@
   :plugins [[lein-ring "0.8.12"]]
   :ring {:handler clojart.handler/app}
   :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
-                                  [ring-mock "0.1.5"]]}
+                                  [ring-mock "0.1.5"]
+                                  [bond "0.2.5"]]}
              :uberjar {:aot :all}}
   :main clojart.core)
