@@ -20,4 +20,5 @@
 (defn -main
   [& args]
   (reset! repl (start-repl 4005))
-  (http-kit/run-server (h/site #'app/app) {:port 8080}))
+  (let [port (-> (or (first args) "8080") Integer/parseInt)]
+    (http-kit/run-server (h/site #'app/app) {:port port})))
