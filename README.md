@@ -7,7 +7,8 @@ Fucking Orchard.
 
 ## Prerequisites
 
-You will need [Leiningen][1] 1.7.0 or above installed.
+* Java 1.7+
+* [Leiningen][1] 1.7.0.
 
 [1]: https://github.com/technomancy/leiningen
 
