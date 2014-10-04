@@ -7,7 +7,19 @@
                  [http-kit "2.1.16"]
                  [hiccup "1.0.5"]
                  [garden "1.2.1"]]
-  :plugins [[lein-ring "0.8.12"]]
+  :plugins [[lein-ring "0.8.12"]
+            [lein-garden "0.2.1"]]
+  :garden {:builds [{;; Optional name of the build:
+                     :id "site"
+                     ;; Source paths where the stylesheet source code is
+                     :source-paths ["src/"]
+                     ;; The var containing your stylesheet:
+                     :stylesheet clojart.styles.site/site
+                     ;; Compiler flags passed to `garden.core/css`:
+                     :compiler {;; Where to save the file:
+                                :output-to "resources/public/site.css"
+                                ;; Compress the output?
+                                :pretty-print? false}}]}
   :ring {:handler clojart.handler/app}
   :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                                   [ring-mock "0.1.5"]

@@ -1,8 +1,11 @@
 (ns clojart.styles.site
-  (:require [garden.core :refer [css]]))
+  (:require [garden.def :refer [defstylesheet defstyles]]
+            [garden.units :refer [px]]))
 
-(css [:body {
-             :font-family "Helvetica"
-             :font-size "16px"}])
+(defstyles site
+  [:body
+   {:font-family "sans-serif"
+    :font-size (px 16)
+    :line-height 1.5}])
 
 
