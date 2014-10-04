@@ -4,8 +4,12 @@
             [compojure.route :as route]
             [hiccup.page :refer [html5]]))
 
+;; <link rel="stylesheet" type="text/css" href="theme.css">
+
 (def index-page
-  (html5 [:head [:title "Clojart.io"]]
+  (html5 [:head
+          [:title "Clojart.io"]
+          [:link {:rel "stylesheet" :type "text/css" :href "site.css"}]]
          [:body
           [:h1 "Clojart.io"]
           [:p "lorem ipsum"]]))

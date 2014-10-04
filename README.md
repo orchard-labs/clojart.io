@@ -21,6 +21,10 @@ Better yet, run it in http-kit like this:
 
     lein run
 
+## Compile CSS
+
+    lein garden once
+
 ## Tests
 
 Run the tests:
