@@ -1,8 +1,8 @@
 (ns clojart.handler
-  (:use hiccup.page)
   (:require [compojure.core :refer :all]
             [compojure.handler :as handler]
-            [compojure.route :as route]))
+            [compojure.route :as route]
+            [hiccup.page :refer [html5]]))
 
 (def index-page
   (html5 [:head [:title "Clojart.io"]]
