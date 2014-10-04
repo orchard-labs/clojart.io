@@ -4,7 +4,8 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.2.0"]
-                 [http-kit "2.1.16"]]
+                 [http-kit "2.1.16"]
+                 [hiccup "1.0.5"]]
   :plugins [[lein-ring "0.8.12"]]
   :ring {:handler clojart.handler/app}
   :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
