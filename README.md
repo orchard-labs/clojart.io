@@ -22,6 +22,10 @@ Better yet, run it in http-kit like this:
 
     lein run
 
+## Compile JS
+
+    lein cljsbuild once
+
 ## Compile CSS
 
     lein garden once
