@@ -3,7 +3,7 @@
             [compojure.handler :as handler]
             [compojure.route :as route]
             [hiccup.page :refer [html5]]))
-;; TODO: require react, goog, main.js
+
 (def index-page
   (html5 [:head
           [:title "Clojart.io"]
